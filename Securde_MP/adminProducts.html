@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style/adminStyle.css">
+    </head>
+    <body>
+        <p class = "openingText"> List of Products </p>
+        <div id="mainContentProducts">
+            <button id = "btnAddProd">
+                Add Product
+            </button>
+            <hr class = "breakLine">
+            <form:form method="GET">
+            <table id="productList">
+                <tr>
+                    <th id="pID">Product ID</th>
+                    <th id="pName">Name</th>
+                    <th id="pPrice">Price</th>
+                    <th id="pQuan">Quantity</th>
+                    <th id="pDesc">Description</th>
+                    <th id="pType">Type</th>
+                    <th id="pEdit">Edit</th>
+                </tr>
+                <c:forEach items="${products}" var="item">
+                    <tr>
+                        <td>0001</td>
+                        <td>Gadget</td>
+                        <td>1000</td>
+                        <td>100</td>
+                        <td>Really Nice Stuff</td>
+                        <td>Laptop</td>
+                        <td>
+                            <input type="text" value="${item.productId}" hidden="true" name="prodId">
+                            <a class="editProd" href="/editProduct?prodId=${item.productId}">Edit</a>
+                            <a class="deleteProd" href="/deleteProduct?prodId=${item.productId}">Delete</a>
+                        </td>
+                    </tr>
+                </c:forEach>
+            </table>
+            </form:form>
+        </div>
+    </body>      
+</html>

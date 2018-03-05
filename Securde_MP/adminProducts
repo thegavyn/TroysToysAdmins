@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style/adminStyle.css">
+    </head>
+    <body>
+        <div id="mainContentHome">
+            <p class = "openingText"> Welcome Admin </p>
+            <hr class = "breakLine">
+            <p class = "secondaryText"> What would you like to do? </p>
+            <button id = "manageProducts">
+            Manage Products
+            </button>
+            <button id = "manageTransactions">
+            Manage Transactions
+            </button>
+        </div>
+    </body>      
+</html>
