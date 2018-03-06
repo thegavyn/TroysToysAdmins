@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Transactions</title>
+        <link rel="stylesheet" type="text/css" href="style/adminStyle.css">
+    </head>
+    <body>
+        <p class = "openingText"> List of Transactions </p>
+        <div id="mainContentTransactions">
+            <hr class = "breakLine">
+            <table id="transactionList">
+                <tr>
+                    <th id="tID">Transaction ID</th>
+                    <th id="tPID">Product ID</th>
+                    <th id="tCID">Customer ID</th>
+                    <th id="tQuan">Quantity</th>
+                    <th id="tAmt">Total Amount</th>
+                    <th id="tTime">Timestamp</th>
+                    <th id="tStat">Status</th>
+                    <th id="tEdit">Edit</th>
+                </tr>
+                    <tr>
+                        <td>0001</td>
+                        <td>0002</td>
+                        <td>0003</td>
+                        <td>2</td>
+                        <td>1000</td>
+                        <td>12/12/2018 10:00:00</td>
+                        <td>In Transit</td>
+                        <td>
+                            <input type="text" value="" hidden="true" name="transacID">
+                            <a class="cancelTransaction" href="#">Cancel</a>
+                            <a class="deleteTransaction" href="#">Delete</a>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </body>      
+</html>

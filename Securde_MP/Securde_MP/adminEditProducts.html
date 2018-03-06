@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Product Edit</title>
+        <link rel="stylesheet" type="text/css" href="style/adminStyle.css">
+    </head>
+    <body>
+        <p class = "openingText"> Edit Product </p>
+        <div id="mainContentEditProduct">
+        <hr class = "breakLine">
+            <table id="tabEditProd">
+                <form id = "editProductForm">
+                    <tr>
+                         <td class="labelProdEdit">Product Name</td><td><input type="text" id="pName"></td>
+                    </tr>
+                    <tr>
+                         <td class="labelProdEdit">Product Price</td><td><input type="text" id="pPrice"></td>
+                    </tr>
+                    <tr>
+                         <td class="labelProdEdit">Product Quantity</td><td><input type="text" id="pQuan"></td>
+                    </tr>
+                    <tr>
+                         <td class="labelProdEdit">Product Brand</td>
+                         <td>
+                            <select id="pBrand">
+                                  <option value="acer">Acer</option>
+                                  <option value="asus">Asus</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                         <td class="labelProdEdit">Product Description</td><td><input type="text" id="pDesc"></td>
+                    </tr>
+                    <tr>
+                         <td class="labelProdEdit">Product Type</td>
+                         <td>
+                            <select id="pType">
+                                  <option value="desktop">Desktop</option>
+                                  <option value="laptop">Laptop</option>
+                                  <option value="tablet">Tablet</option>
+                                  <option value="mobile">Mobile Phones</option>
+                            </select>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td class="labelProdEdit" colspan=2 id="lastCellButton"><input type="submit" id= "submitEditProduct"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </body>      
+</html>
